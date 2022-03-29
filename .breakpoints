@@ -1,0 +1,28 @@
+{
+  "files": {
+    "week_2/combo.py": [
+      {
+        "id": "b4d6acd1-5aa3-4e69-ba3b-a6077b5ef4f1",
+        "line": 8,
+        "version": 235,
+        "index": 190
+      }
+    ],
+    "week_2/factorial.py": [
+      {
+        "id": "b9de40b6-5766-4b53-99fe-5d6406c9a85e",
+        "line": 7,
+        "version": 653,
+        "index": 150
+      }
+    ],
+    "week_2/palindrome.py": [
+      {
+        "id": "bafe6409-d1c3-44e8-a335-57e7b3e9db6b",
+        "line": 28,
+        "version": 1263,
+        "index": 678
+      }
+    ]
+  }
+}
