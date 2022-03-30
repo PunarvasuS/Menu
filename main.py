@@ -2,7 +2,7 @@
 # menuy.py - function style menu
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
-
+from tri2 import swap
 from week_0 import animation
 from week_1 import InfoDb
 from week_2 import factorial, fibfac, palindrome, combo
@@ -53,6 +53,7 @@ main_menu = [
 # Works similarly to main_menu
 
 math_list = [
+  ["Swap", swap.swapTester],
   ["Factorial IMP", fibfac.factorial],
   ["Fibonacci", fibfac.output_fibonacci],
   ["Factorial OOP", factorial.tester],
@@ -65,7 +66,6 @@ math_list = [
 patterns_list = [
   ["Car Animation", animation.ship],
   ["Numpad", "tri2/matrix.py"],
-  ["Swap", "tri2/swap.py"],
   ["Tree Printer", "week_0/tree.py"],
 ]
 
