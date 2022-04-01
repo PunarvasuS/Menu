@@ -3,15 +3,18 @@ import time
 # terminal print commands
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
-ROAD_COLOR = u"\u001B[70;1"
-SHIP_COLOR = u"\u001B[32m\u001B[2D"
+one_color = u"\u001b[37m"
+second_color = u"\u001b[31m"
 RESET_COLOR = u"\u001B[0m\u001B[2D"
 
 # print ship with colors and leading spaces
 def ship_print(position):
     print(ANSI_CLEAR_SCREEN)
     print(ANSI_HOME_CURSOR)
-    print(RESET_COLOR)
+    if position%4==0:
+      print(one_color)
+    else:
+      print(second_color)
     sp = " " * position
     print()
     print(sp + " ____________________")
