@@ -30,13 +30,13 @@ def math_func():
   title = "Input Sub Menu" + banner
   buildMenu(title, math_list)
 
-def patterns_func():
-  title = "Patterns Sub Menu" + banner
-  buildMenu(title, patterns_list)
+def animations_func():
+  title = "Animations Sub Menu" + banner
+  buildMenu(title, animations_list)
 
-def misc_func():
-  title = "Misc Sub Menu" + banner
-  buildMenu(title, misc_list)
+def static_func():
+  title = "Static Sub Menu" + banner
+  buildMenu(title, static_list)
 
 # menu builds:
   
@@ -45,9 +45,9 @@ def misc_func():
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
 main_menu = [
-  ["Patterns", patterns_func],
+  ["Animations", animations_func],
   ["Math", math_func],
-  ["Misc", misc_func]
+  ["Static", static_func]
 ]
 
 # Submenu list of [Prompt, Action]
@@ -65,15 +65,15 @@ math_list = [
 # ["Find Factors", fibfac.find_factors]
 ]
 
-patterns_list = [
+animations_list = [
   ["Car Animation", animation.ship],
-  ["Numpad", "tri2/matrix.py"],
   ["Tree Printer", "week_0/tree.py"],
 ]
 
-misc_list = [
+static_list = [
   ["Stats of List (CreateTask)", "tri2/createtask.py"],
-  ["InfoDb Loops", InfoDb.InfoDb_loops]
+  ["InfoDb Loops", InfoDb.InfoDb_loops],
+  ["Numpad", "tri2/matrix.py"],
 ]
 
 # def buildMenu
