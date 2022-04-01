@@ -6,6 +6,7 @@ from tri2 import swap
 from week_0 import animation
 from week_1 import InfoDb
 from week_2 import factorial, fibfac, palindrome, combo
+from startup import welcome_animation
 
 
 # Menu banner is typically defined by menu owner
@@ -123,4 +124,5 @@ def buildMenu(banner, options):
   buildMenu(banner, options)  # recursion, start menu over again
 
 if __name__ == "__main__":
+  welcome_animation()
   menu()
