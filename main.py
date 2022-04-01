@@ -66,7 +66,7 @@ math_list = [
 ]
 
 animations_list = [
-  ["Car Animation", animation.ship],
+  ["Car Animation", animation.car],
   ["Tree Printer", "week_0/tree.py"],
 ]
 
