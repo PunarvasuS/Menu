@@ -5,7 +5,7 @@
 from tri2 import swap
 from week_0 import animation
 from week_1 import InfoDb
-from week_2 import factorial, fibfac, palindrome, combo
+from week_2 import factorial, fibfac, palindrome, combo, gcf
 from startup import welcome_animation
 
 
@@ -61,6 +61,7 @@ math_list = [
   ["Palindrome", palindrome.tester],
   ["Combinations OOP", combo.comb_test_oop],
   ["Combinations IMP", combo.comb_test_imp],
+  ["Greatest Common Factor", gcf.GCF_tester],
 # ["Find Factors", fibfac.find_factors]
 ]
 

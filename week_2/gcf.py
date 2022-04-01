@@ -1,4 +1,4 @@
-class GCD:
+class GCF:
     def __init__(self,a,b):
         self.a=a
         self.b=b
@@ -24,8 +24,8 @@ class GCD:
             return self()
 
 
-def GCD_OOP_tester():
+def GCF_tester():
     num1 = int(input("Enter a number: "))
     num2 = int(input("Enter a second number: "))
-    GCD_instance = GCD(num1,num2)
-    print("GCD: ", GCD_instance())
+    GCF_instance = GCF(num1,num2)
+    print("GCF: ", GCF_instance())
