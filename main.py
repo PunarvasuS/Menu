@@ -2,10 +2,11 @@
 # menuy.py - function style menu
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
-
+from tri2 import swap
 from week_0 import animation
 from week_1 import InfoDb
-from week_2 import factorial, fibfac, palindrome, combo
+from week_2 import factorial, fibfac, palindrome, combo, gcf
+from startup import welcome_animation
 
 
 # Menu banner is typically defined by menu owner
@@ -29,13 +30,13 @@ def math_func():
   title = "Input Sub Menu" + banner
   buildMenu(title, math_list)
 
-def patterns_func():
-  title = "Patterns Sub Menu" + banner
-  buildMenu(title, patterns_list)
+def animations_func():
+  title = "Animations Sub Menu" + banner
+  buildMenu(title, animations_list)
 
-def misc_func():
-  title = "Misc Sub Menu" + banner
-  buildMenu(title, misc_list)
+def static_func():
+  title = "Static Sub Menu" + banner
+  buildMenu(title, static_list)
 
 # menu builds:
   
@@ -44,34 +45,35 @@ def misc_func():
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
 main_menu = [
-  ["Patterns", patterns_func],
+  ["Animations", animations_func],
   ["Math", math_func],
-  ["Misc", misc_func]
+  ["Static", static_func]
 ]
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
 
 math_list = [
+  ["Swap", swap.swapTester],
   ["Factorial IMP", fibfac.factorial],
   ["Fibonacci", fibfac.output_fibonacci],
   ["Factorial OOP", factorial.tester],
   ["Palindrome", palindrome.tester],
   ["Combinations OOP", combo.comb_test_oop],
   ["Combinations IMP", combo.comb_test_imp],
+  ["Greatest Common Factor", gcf.GCF_tester],
 # ["Find Factors", fibfac.find_factors]
 ]
 
-patterns_list = [
-  ["Car Animation", animation.ship],
-  ["Numpad", "tri2/matrix.py"],
-  ["Swap", "tri2/swap.py"],
+animations_list = [
+  ["Car Animation", animation.car],
   ["Tree Printer", "week_0/tree.py"],
 ]
 
-misc_list = [
+static_list = [
   ["Stats of List (CreateTask)", "tri2/createtask.py"],
-  ["InfoDb Loops", InfoDb.InfoDb_loops]
+  ["InfoDb Loops", InfoDb.InfoDb_loops],
+  ["Numpad", "tri2/matrix.py"],
 ]
 
 # def buildMenu
@@ -123,4 +125,5 @@ def buildMenu(banner, options):
   buildMenu(banner, options)  # recursion, start menu over again
 
 if __name__ == "__main__":
+  welcome_animation()
   menu()
