@@ -8,11 +8,13 @@ class Palindrome:
     for i in range(0, int(len(n)/2)):
       if n[i] != n[len(n)-i-1]:
         index.append(i)
-        return False
+  
     new_n = (re.sub('[^a-zA-Z0-9]', '', n)).lower()
     if new_n == new_n[::-1]:
       index.clear()
       return True
+    if index:
+      return False
 
 def tester():
   pal_of = Palindrome()
